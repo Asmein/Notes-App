@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layoutEditNote" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="?android:windowBackground">
+
+    <EditText
+        android:id="@+id/etNoteTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Note Title"
+        android:inputType="text"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="?android:textColorPrimary"
+        android:textColorHint="?android:textColorSecondary"
+        android:background="@drawable/rounded_edittext"
+        android:padding="12dp"/>
+
+    <EditText
+        android:id="@+id/etNoteContent"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="top|start"
+        android:hint="Write your note here..."
+        android:inputType="textMultiLine"
+        android:minLines="5"
+        android:textSize="16sp"
+        android:textColor="?android:textColorPrimary"
+        android:textColorHint="?android:textColorSecondary"
+        android:background="@drawable/rounded_edittext"
+        android:padding="12dp"
+        android:layout_marginTop="8dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="16dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Theme:"
+            android:textSize="16sp"
+            android:layout_marginEnd="8dp"/>
+
+        <View
+            android:id="@+id/theme_white"
+            android:layout_width="48dp" android:layout_height="48dp"
+            android:background="@color/note_theme_white"
+            android:layout_marginEnd="8dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:contentDescription="@string/theme_white" />
+
+        <View
+            android:id="@+id/theme_yellow"
+            android:layout_width="48dp" android:layout_height="48dp"
+            android:background="@color/note_theme_light_yellow"
+            android:layout_marginEnd="8dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:contentDescription="@string/theme_yellow" />
+
+        <View
+            android:id="@+id/theme_blue"
+            android:layout_width="48dp" android:layout_height="48dp"
+            android:background="@color/note_theme_light_blue"
+            android:layout_marginEnd="8dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:contentDescription="@string/theme_blue" />
+
+        <View
+            android:id="@+id/theme_green"
+            android:layout_width="48dp" android:layout_height="48dp"
+            android:background="@color/note_theme_light_green"
+            android:layout_marginEnd="8dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:contentDescription="@string/theme_green" />
+
+        <View
+            android:id="@+id/theme_pink"
+            android:layout_width="48dp" android:layout_height="48dp"
+            android:background="@color/note_theme_light_pink"
+            android:clickable="true"
+            android:focusable="true"
+            android:contentDescription="@string/theme_pink" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="10dp">
+
+        <Button
+            android:id="@+id/btnSaveNote"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Save"
+            style="@style/ButtonStyle" />
+
+        <Button
+            android:id="@+id/btnDeleteNote"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Delete"
+            style="@style/DeleteButtonStyle"
+            android:layout_marginStart="8dp"/>
+    </LinearLayout>
+
+</LinearLayout>

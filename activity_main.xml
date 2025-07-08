@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="?android:windowBackground">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <EditText
+            android:id="@+id/etSearch"
+            android:layout_width="0dp"
+            android:layout_height="82dp"
+            android:layout_weight="1"
+            android:background="@drawable/rounded_edittext"
+            android:hint="Search notes"
+            android:inputType="text"
+            android:padding="10dp"
+            android:textColor="?android:textColorPrimary"
+            android:textColorHint="?android:textColorSecondary" />
+
+        <Button
+            android:id="@+id/btnAddNote"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="+ New"
+            style="@style/ButtonStyle"/>
+
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/listViewNotes"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:divider="@color/noteItemDivider"
+        android:dividerHeight="1dp" />
+
+</LinearLayout>

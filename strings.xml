@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">NotesApp</string>
+    <string name="edit_note">Edit Note</string>
+    <string name="note_title_hint">Note Title</string>
+    <string name="note_content_hint">Write your note here...</string>
+    <string name="save">Save</string>
+    <string name="delete">Delete</string>
+    <string name="search_notes_hint">Search notes</string>
+    <string name="new_note">New</string>
+    <string name="theme">Theme:</string>
+    <string name="theme_white">White theme</string>
+    <string name="theme_yellow">Light yellow theme</string>
+    <string name="theme_blue">Light blue theme</string>
+    <string name="theme_green">Light green theme</string>
+    <string name="theme_pink">Light pink theme</string>
+</resources>

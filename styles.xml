@@ -1,0 +1,23 @@
+<resources>
+    <style name="ButtonStyle" parent="Widget.MaterialComponents.Button">
+        <item name="android:backgroundTint">@color/buttonPrimary</item>
+        <item name="android:textColor">@color/buttonPrimaryText</item>
+        <item name="android:insetTop">0dp</item>
+        <item name="android:insetBottom">0dp</item>
+        <item name="android:paddingStart">16dp</item>
+        <item name="android:paddingEnd">16dp</item>
+        <item name="android:minHeight">48dp</item>
+        <item name="cornerRadius">8dp</item>
+    </style>
+
+    <style name="DeleteButtonStyle" parent="Widget.MaterialComponents.Button">
+        <item name="android:backgroundTint">@color/buttonDelete</item>
+        <item name="android:textColor">@color/buttonDeleteText</item>
+        <item name="android:insetTop">0dp</item>
+        <item name="android:insetBottom">0dp</item>
+        <item name="android:paddingStart">16dp</item>
+        <item name="android:paddingEnd">16dp</item>
+        <item name="android:minHeight">48dp</item>
+        <item name="cornerRadius">8dp</item>
+    </style>
+</resources>
